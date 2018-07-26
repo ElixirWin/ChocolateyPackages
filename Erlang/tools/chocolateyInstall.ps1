@@ -8,18 +8,18 @@ Version: 20.2
 #>
 
 $package = 'erlang'
-$version = '20.2'
-$erl_version = '9.2'
+$version = '21.0.1'
+$erl_version = '10.0.1'
 
 $params = @{
   PackageName = $package
   FileType = 'exe'
   SilentArgs = '/S'
   Url = "http://www.erlang.org/download/otp_win32_$version.exe"
-  CheckSum = '961f2745f4791198cc74ea6b1c36bfe3d9598f26dcc4f945df51302e4b67f7f3' 
+  CheckSum = 'b2dc656040905215b6e412569f55a97d30f6a8e7ad2eff0d9bc106a95c692106'
   CheckSumType = 'sha256'
   Url64 = "http://www.erlang.org/download/otp_win64_$version.exe"
-  CheckSum64 = 'd06c5f644d831f5b39654d3d191c628593c947fa2592ba282969a8298cff1a12'
+  CheckSum64 = '6eea3ab310cec9ec72002d555ce0f9213bc1424a86a221f1c70411dc6b73f28f'
   CheckSumType64 = 'sha256'
   validExitCodes = @(0)
 }
