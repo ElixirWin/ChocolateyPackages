@@ -4,22 +4,22 @@ An install script for installing Erlang silently on the machine via ChocolateyNu
 
 .NOTES
 Author: Onorio Catenacci - catenacci@ieee.org
-Version: 20.2
+Version: 21.2
 #>
 
 $package = 'erlang'
-$version = '20.2'
-$erl_version = '9.2'
+$version = '21.2'
+$erl_version = '10.2'
 
 $params = @{
   PackageName = $package
   FileType = 'exe'
   SilentArgs = '/S'
   Url = "http://www.erlang.org/download/otp_win32_$version.exe"
-  CheckSum = '961f2745f4791198cc74ea6b1c36bfe3d9598f26dcc4f945df51302e4b67f7f3' 
+  CheckSum = 'f1e8153530ef91c9cdc4a73593fe0fe41755412244370060bd8e4b80572ba242'
   CheckSumType = 'sha256'
   Url64 = "http://www.erlang.org/download/otp_win64_$version.exe"
-  CheckSum64 = 'd06c5f644d831f5b39654d3d191c628593c947fa2592ba282969a8298cff1a12'
+  CheckSum64 = '468f50caa643bbed484be475419d200d47c87597efd4057142bdb000e1accb72'
   CheckSumType64 = 'sha256'
   validExitCodes = @(0)
 }
