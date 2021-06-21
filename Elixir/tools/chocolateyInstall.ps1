@@ -1,12 +1,12 @@
 $package = 'Elixir'
  
-$version = '1.9.1'
+$version = '1.9.4'
 $params = @{
   PackageName = $package
   FileType = 'zip'
-  CheckSum = '17e43cb1627a0fa5625bc370cec0964ad6471ef242f1549e316db73c0d94fcc6'
+  CheckSum = '10405B5E63549DC65C6A6AB83FAF0EC94BDAF5CC3ED5E71EBA3432D882BAAF8B'
   CheckSumType = 'sha256'
-  Url = "https://github.com/elixir-lang/elixir/releases/download/v$version/Precompiled.zip"
+  Url = "https://repo.hex.pm/builds/elixir/v$version-otp-22.zip"
  
   UnzipLocation = $env:chocolateyPackageFolder;
 }
